@@ -1,0 +1,15 @@
+services:
+  mysql-lock-slow-monitor:
+    build: .
+    image: mysql-lock-slow-monitor:latest
+    container_name: mysql-lock-slow-monitor
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/data
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "5"
