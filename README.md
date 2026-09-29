@@ -73,7 +73,7 @@ vi .env
 核心配置：
 
 ```env
-MYSQL_HOST=database-1.cluster-cn6wwckiqvwk.ap-east-1.rds.amazonaws.com
+MYSQL_HOST=
 MYSQL_PORT=3306
 MYSQL_USER=mysql_monitor
 MYSQL_PASSWORD=ChangeMe_StrongPassword
@@ -90,7 +90,7 @@ PROCESSLIST_SLOW_SECONDS=10
 
 # Telegram 群告警
 TELEGRAM_BOT_TOKEN=123456:xxxxxx
-TELEGRAM_CHAT_ID=-4974599682
+TELEGRAM_CHAT_ID=
 ```
 
 完整示例见 `.env.example`。
